@@ -12,7 +12,7 @@ jobs:
       python:
         - 2.7.16
       before_install:
-        - sudo pip install xdclient
+        - pip install xdclient
       script:
         - python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -f True
     - stage: release

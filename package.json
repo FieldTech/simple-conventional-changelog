@@ -1,6 +1,6 @@
 {
   "name": "@fieldtech/simple-conventional-changelog",
-  "version": "1.1.4",
+  "version": "0.0.0-development",
   "description": "Simple Commitizen adapter following the conventional-changelog format.",
   "keywords": [
     "automation",
@@ -46,7 +46,7 @@
     "mocha": "^6.2.0",
     "mock-require": "^3.0.3",
     "prettier": "^1.15.3",
-    "semantic-release": "^17.0.4",
+    "semantic-release": "^17.0.7",
     "semver": "^6.2.0"
   },
   "optionalDependencies": {
