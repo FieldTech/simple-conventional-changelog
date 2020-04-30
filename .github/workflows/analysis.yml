@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v1
 
     # Setup Python Environment
-    - name: Set up Python 2.7
+    - name: Setup Python 2.7
       uses: actions/setup-python@v1
       with:
         python-version: 2.7.17
@@ -38,4 +38,4 @@ jobs:
         APPID: ${{ secrets.APPID }}
         APPKEY: ${{ secrets.APPKEY }}
         TEAMID: ${{ secrets.TEAMID }}
-      run: python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -f True
+      run: python -m xdclient -i $APPID -k $APPKEY -t $TEAMID
