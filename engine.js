@@ -135,7 +135,7 @@ module.exports = function(options) {
         // Wrap issue number with #
         var issues = answers.issues
           ? answers.issues.indexOf('#') >= 0
-            ? answers.issues
+            ? answers.issues + ' '
             : '#' + answers.issues + ' '
           : '';
 

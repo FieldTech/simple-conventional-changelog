@@ -32,7 +32,7 @@
   "dependencies": {
     "@fieldtech/conventional-commit-types-zh-cn": "^1.0.0",
     "chalk": "^2.4.1",
-    "commitizen": "^4.0.3",
+    "commitizen": "^4.0.4",
     "lodash.map": "^4.5.1",
     "longest": "^2.0.1",
     "right-pad": "^1.0.1",
