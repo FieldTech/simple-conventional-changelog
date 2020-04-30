@@ -34,4 +34,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Run analysis script
-      run: python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -f True
+      run: python -m xdclient -i "$APPID" -k "$APPKEY" -t "$TEAMID" -f True
