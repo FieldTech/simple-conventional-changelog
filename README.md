@@ -81,10 +81,12 @@ $ commitizen init @fieldtech/simple-conventional-changelog --save --save-exact
 
 ## 提交代码
 
-使用 `git cz` 而非 `git commit` 来提交变更。随后您将看到下列交互式操作，根据提示即可完成规范的注释提交。
+使用 `git cz` 而非 `git commit` 来提交变更。随后您将看到交互式操作界面，根据提示即可完成规范的注释提交。
 
 ```
 $ git cz
 ```
 
-[![Add and commit with Commitizen](https://raw.githubusercontent.com/FieldTech/simple-conventional-changelog/master/images/add-commit.png)](https://raw.githubusercontent.com/FieldTech/simple-conventional-changelog/master/images/add-commit.png)
+## 参考
+
+- [X-Developer](https://x-developer.cn)
