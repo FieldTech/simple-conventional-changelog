@@ -26,7 +26,7 @@ jobs:
     - name: Set up Python 2.7
       uses: actions/setup-python@v1
       with:
-        python-version: 2.7.16
+        python-version: 2.7.17
 
     # Install X-Developer Client
     - name: Install X-Developer Command Line Client
