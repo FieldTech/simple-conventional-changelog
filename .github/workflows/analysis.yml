@@ -33,9 +33,9 @@ jobs:
       run: pip install xdclient
 
     # Runs a set of commands using the runners shell
-    - shell: bash
+    - name: Run analysis
       env:
         APPID: ${{ secrets.APPID }}
         APPKEY: ${{ secrets.APPKEY }}
         TEAMID: ${{ secrets.TEAMID }}
-      run: python -m xdclient -i "$APPID" -k "$APPKEY" -t "$TEAMID" -f True
+      run: python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -f True
