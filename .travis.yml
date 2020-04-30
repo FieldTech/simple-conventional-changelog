@@ -1,0 +1,28 @@
+language: node_js
+sudo: required
+
+node_js:
+  - 12
+  - 10
+
+jobs:
+  include:
+    - stage: analysis
+      language: python
+      python:
+        - 2.7.16
+      before_install:
+        - sudo pip install xdclient
+      script:
+        - python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -f True
+    - stage: release
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run semantic-release
+
+branches:
+  only:
+    - master
