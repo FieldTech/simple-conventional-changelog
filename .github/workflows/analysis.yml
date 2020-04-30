@@ -36,8 +36,7 @@ jobs:
     - shell: bash
       env:
         SUPER_SECRET: ${{ secrets.NAME }}
-      run: |
-        example-command "$SUPER_SECRET"
+      run: echo "$SUPER_SECRET"
 
 
     # Runs a set of commands using the runners shell
