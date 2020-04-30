@@ -32,6 +32,14 @@ jobs:
     - name: Install X-Developer Command Line Client
       run: pip install xdclient
 
+    # Test Screct Name
+    - shell: bash
+      env:
+        SUPER_SECRET: ${{ secrets.NAME }}
+      run: |
+        example-command "$SUPER_SECRET"
+
+
     # Runs a set of commands using the runners shell
     - name: Run analysis script
       run: python -m xdclient -i "$APPID" -k "$APPKEY" -t "$TEAMID" -f True
