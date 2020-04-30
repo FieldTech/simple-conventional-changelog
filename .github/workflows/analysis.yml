@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
 
     # Setup Python Environment
     - name: Set up Python 2.7
@@ -31,13 +31,6 @@ jobs:
     # Install X-Developer Client
     - name: Install X-Developer Command Line Client
       run: pip install xdclient
-
-    # Test Screct Name
-    - shell: bash
-      env:
-        SUPER_SECRET: ${{ secrets.NAME }}
-      run: echo "$SUPER_SECRET"
-
 
     # Runs a set of commands using the runners shell
     - shell: bash
