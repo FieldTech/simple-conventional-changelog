@@ -1,4 +1,4 @@
-name: Analysis
+name: X-Developer Analysis Action
 
 on:
   push:
@@ -13,5 +13,20 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: X-Developer Analysis Action
-      uses: FieldTech/x-developer-analysis-action@V1.0
+    # Setup Python Environment
+    - name: Setup Python 2.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 2.7.17
+
+    # Install X-Developer Client
+    - name: Install X-Developer Command Line Client
+      run: pip install xdclient
+
+    # Runs a set of commands using the runners shell
+    - name: Run analysis
+      env:
+        APPID: ${{ secrets.APPID }}
+        APPKEY: ${{ secrets.APPKEY }}
+        TEAMID: ${{ secrets.TEAMID }}
+      run: python -m xdclient -i $APPID -k $APPKEY -t $TEAMID -m True
