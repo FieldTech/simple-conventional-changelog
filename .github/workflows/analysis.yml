@@ -1,5 +1,3 @@
-name: X-Developer Analysis Action
-
 on:
   push:
     branches: [ master ]
@@ -8,7 +6,6 @@ jobs:
   analysis:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
     - name: X-Developer Analysis Action
       uses: FieldTech/x-developer-analysis-action@V1.1
       with:
