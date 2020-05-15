@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ master ]
+#     branches: [ master ]
 
 jobs:
   analysis:
@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: X-Developer Analysis Action
-        uses: FieldTech/x-developer-analysis-action@V1.1
+        uses: FieldTech/x-developer-analysis-action@V1.2
         with:
           APPID: ${{ secrets.APPID }}
           APPKEY: ${{ secrets.APPKEY }}
