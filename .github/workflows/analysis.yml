@@ -6,11 +6,12 @@ jobs:
   analysis:
     runs-on: ubuntu-latest
     steps:
-    - name: X-Developer Analysis Action
-      uses: FieldTech/x-developer-analysis-action@V1.1
-      with:
-        APPID: ${{ secrets.APPID }}
-        APPKEY: ${{ secrets.APPKEY }}
-        TEAMID: ${{ secrets.TEAMID }}
-        Master: True
-        Force: True
+      - uses: actions/checkout@v1
+      - name: X-Developer Analysis Action
+        uses: FieldTech/x-developer-analysis-action@V1.1
+        with:
+          APPID: ${{ secrets.APPID }}
+          APPKEY: ${{ secrets.APPKEY }}
+          TEAMID: ${{ secrets.TEAMID }}
+          Master: True
+          Force: True
