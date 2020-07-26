@@ -1,6 +1,5 @@
 # simple-conventional-changelog
 
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/x-developer)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/FieldTech/simple-conventional-changelog)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![npm version](https://img.shields.io/npm/v/@fieldtech/simple-conventional-changelog/latest.svg)](https://www.npmjs.org/package/@fieldtech/simple-conventional-changelog)
@@ -77,7 +76,7 @@ $ commitizen init @fieldtech/simple-conventional-changelog --save --save-exact
     }
 // ...    
 }
-``` 
+```
 
 ## 提交代码
 
