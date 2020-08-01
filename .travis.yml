@@ -15,13 +15,13 @@ jobs:
         - pip install xdclient
       script:
         - python -m xdclient -i $APPID -k $APPKEY -t $TEAMID
-    - stage: release
+    - stage: test
       node_js: lts/*
       deploy:
         provider: script
         skip_cleanup: true
         script:
-          - npm run semantic-release
+          - npm run test
 
 branches:
   only:

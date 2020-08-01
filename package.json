@@ -15,8 +15,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha *.test.js",
-    "format": "prettier --write *.js",
-    "semantic-release": "semantic-release"
+    "format": "prettier --write *.js"
   },
   "homepage": "https://github.com/FieldTech/simple-conventional-changelog#readme",
   "repository": {
@@ -45,7 +44,6 @@
     "mocha": "^8.0.0",
     "mock-require": "^3.0.3",
     "prettier": "^1.15.3",
-    "semantic-release": "17.1.1",
     "semver": "^6.2.0"
   },
   "optionalDependencies": {
